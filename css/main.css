@@ -169,24 +169,6 @@ a:hover {
     font-weight: 300;
 }
 
-/*
-.section-heading {
-    font-size: 2.5rem;
-    font-weight: 300;
-}
-
-.section-text {
-    font-size: 1.2rem;
-    font-weight: 300;
-}
-
-.team-name {
-    font-size: 1.5rem;
-    font-weight: 300;
-
-}
-*/
-
 .carousel-control-next,
 .carousel-control-prev {
     width: 10%;
@@ -213,7 +195,16 @@ a:hover {
 
 footer {
     background-color: var(--dark) !important;
-    color: var(--white);
+    color: rgba(255, 255, 255, .5);
+}
+
+footer a {
+    color: rgba(255, 255, 255, .5);
+}
+
+footer a:hover {
+    color: rgba(255, 255, 255, .75);
+    text-decoration: none;
 }
 
 .btn-green {
