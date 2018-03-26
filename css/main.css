@@ -207,6 +207,10 @@ footer a:hover {
     text-decoration: none;
 }
 
+footer .list-inline {
+    margin-bottom: 0px !important;
+}
+
 .btn-green {
     color: #fff;
     background-color: var(--green);

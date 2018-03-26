@@ -13,6 +13,6 @@ $(document).ready(function () {
     });
 
     $('.whitepaper-link').click(function (e) {
-        ga('send', 'event', 'Whitepaper', 'click', 'Website');
+        gtag('send', 'event', 'Whitepaper', 'click', 'Website');
     });
 });
