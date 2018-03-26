@@ -11,4 +11,8 @@ $(document).ready(function () {
         $('.nav-item.active').removeClass("active");
         $(this).addClass("active");
     });
+
+    $('.whitepaper-link').click(function (e) {
+        ga('send', 'event', 'Whitepaper', 'click', 'Website');
+    });
 });
