@@ -13,6 +13,11 @@ $(document).ready(function () {
     });
 
     $('.whitepaper-link').click(function (e) {
-        gtag('send', 'event', 'Whitepaper', 'click', 'Website');
+        // gtag('event', <action>, { 'event_category': <category>, 'event_label': <label>, 'value': <value>});
+        gtag('event', 'download', {
+            'event_category': 'whitepaper',
+            'event_label': 'onpage',
+            'value': 1
+        });
     });
 });
