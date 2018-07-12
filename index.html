@@ -1,336 +1,1049 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Microblogging done right with blockchain technology">
-    <meta name="author" content="InkDrop">
-    <link rel="icon" type="image/svg+xml" href="icons/inkdrop_logo.svg">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-    <link rel="manifest" href="favicons/site.webmanifest">
-    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#85bd3e">
-    <meta name="msapplication-TileColor" content="#29313e">
-    <meta name="theme-color" content="#29313e">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=Overpass:200,300,400,600' rel='stylesheet'>
-    <link rel="stylesheet" href="css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="https://getbootstrap.com/favicon.ico">
 
-    <title>InkDrop - Microblogging done right.</title>
+  <title>Product example for Bootstrap</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Signika:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Overpass:200,300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css?v1">
+
 </head>
 
 <body>
-    <div class="bg-dark">
-        <div class="container container-fluid">
-            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-                <a class="navbar-brand" href="/"><img src="icons/inkdrop_logo.svg" width="30" height="30" class="d-inline-block align-top py-1" alt="InkDrop Logo">InkDrop</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
 
-                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="/">HOME <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section-inkdrop">VISION</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section-social">DISCOVER</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section-coins">TOKEN</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section-poc">PROOF-OF-CARE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section-team">TEAM</a>
-                        </li>
-                    </ul>
-                    <a class="btn btn-green whitepaper-link" href="pdfs/InkDrop-white-paper.pdf">Read our white paper</a>
-                </div>
-            </nav>
+  <!-- InkDrop Section -->
+  <section class="inkdrop-section full-height">
+
+
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+
+      <div class="container">
+
+
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand" href="#">
+
+          <h2 class="text-white d-md-inline-block icon-title">
+
+            <img src="images/icon_drop.svg" width="40" height="45" class="d-md-inline-block icon-drop" alt="icon drop"> InkDrop
+
+            <span class="text-green">.</span>
+          </h2>
+
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item float-right">
+              <a class="nav-link upper text-white px-4" href="#">Home</a>
+            </li>
+            <li class="nav-item float-right">
+              <a class="nav-link upper text-white px-4" data-scroll href="#what-is-inkdrop">Vision</a>
+            </li>
+            <li class="nav-item float-right">
+              <a class="nav-link upper text-white px-4" data-scroll href="#features">Features</a>
+            </li>
+            <li class="nav-item float-right">
+              <a class="nav-link upper text-white px-4" data-scroll href="#ecosystem">Ecosystem</a>
+            </li>
+            <li class="nav-item float-right">
+              <a class="nav-link upper text-white px-4" data-scroll href="#roadmap">Roadmap</a>
+            </li>
+            <li class="nav-item float-right">
+              <a class="nav-link upper text-white px-4" data-scroll href="#community">Community</a>
+            </li>
+          </ul>
+
         </div>
+
+      </div>
+
+    </nav>
+
+
+
+
+
+    <div class="container position-relative navbar-padding h-100">
+      <div class="row justify-content-end">
+
+        <div class="col-sm-6">
+
+          <h1 class="display-4 font-weight-normal text-white">InkDrop
+            <span class="text-green">.</span>
+          </h1>
+
+          <h2 class="text-white font-weight-hundred">Microblogging beyond Twitter.</h2>
+
+          <a class="btn btn-outline-secondary upper betabtn btn-lg" href="#" style="">Join the beta now!</a>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div id="section10">
+
+          <a href="#what-is-inkdrop">
+            <span></span>
+          </a>
+          <span class="scroll-text">Scroll</span>
+        </div>
+      </div>
+
     </div>
 
-    <main role="main">
-        <div class="jumbotron bg-dark pt-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <img src="icons/icon_drop.svg" class="jumbotron-icon img-fluid d-none d-sm-block" alt="InkDrop platform">
-                    </div>
-                    <div class="col-sm-6">
-                        <h1 class="heading">InkDrop<span class="font-green">.</span></h1>
-                        <p class="lead">Microblogging done right with blockchain technology.</p>
-                    </div>
-                </div>
-                <div id="scroller" class="text-center pb-3">
-                    <a class="mx-auto" href="#section-inkdrop">
-                        <div></div>Scroll</a>
-                </div>
-            </div>
+
+
+
+
+
+  </section>
+
+
+
+
+  <!-- What is Inkdrop -->
+  <section id="what-is-inkdrop" class="">
+
+
+
+
+    <div class="container-fluid">
+
+      <div class="row">
+
+        <div class="col-sm-6 text-white pl-0">
+
+
+          <img src="images/what-is-inkdrop.jpg" alt="what is inkdrop" class="img-fluid full-width-percent">
+
         </div>
 
-        <div class="container">
-            <div id="section-inkdrop" class="row py-5">
-                <div class="col-sm">
-                    <h3 class="section-heading mb-4">What is <span class="font-green">InkDrop</span>?</h3>
-                    <p class="section-text">InkDrop is set out to become the first decentralized microblogging platform that pays its content creators, curators and consumers. The platform is designed around the <span class="font-green">DROP</span> crypto token, which enables a series of unique new features. <br style="line-height: 30px" />The InkDrop social network is designed to be self-regulating with its fine tuned incentive system and innovative social mechanisms. Thus, fostering positive behaviour and punishing trolls and spammers that try to misuse the platform.</p>
-                    <a class="btn btn-green whitepaper-link" href="pdfs/InkDrop-white-paper.pdf">Read our white paper</a>
+        <div class="col-sm-6 text-white p-5 pl-0">
+
+          <h1 class="font-weight-hundred-3 text-center-mobile">
+            What is
+            <span class="font-weight-hundred-6">InkDrop</span>
+            <span class="font-weight-hundred-6 text-green">?</span>
+          </h1>
+          <br>
+          <p class="font-weight-hundred max-width-550 font-size-1half pr-0-mobile">
+            InkDrop is a microblogging platform eevryday people can use to help spread their message. In return, people can earn the
+            needed, internal currency by giving something back to the network in the form of appreciated content and care
+            (like fighting platform abuse).
+          </p>
+          <p class="font-weight-hundred max-width-550 font-size-1half pr-0-mobile">
+            Lately, it has become apparent that the traditional as- & user data-based model is unsustainable and irreconcilable with
+            matters like user privacy and data security. InkDrop pioneers an entirely new approach to social media that tackles
+            its most pressing issues.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- The Inkdrop Platform -->
+  <section id="features" class="full-height pt-10rem">
+
+    <div class="container-fluid text-center">
+
+
+      <div class="platform-background">
+
+
+        <div class="row justify-content-center right-0 left-0">
+          <div class="col-sm-5 inkdrop-platform-title">
+            <h1 class="text-center text-white font-weight-hundred-3 inkdrop-platform-title-text">
+              The
+              <span class="font-weight-hundred-6 text-green"> InkDrop </span> platform is designed around a
+              <span style="font-weight: 600">crypto currency</span>, which enables:
+            </h1>
+
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+          <div class="col-sm-3 text-white">
+            <h4 class="font-weight-hundred">
+              Fundamentally new ways to connect, ...
+            </h4>
+
+          </div>
+          <div class="col-sm-3 text-white text-center">
+            <h4 class="font-weight-hundred">
+              straightforward ways for content monetization, ...
+            </h4>
+
+          </div>
+          <div class="col-sm-3 text-white text-center">
+            <h4 class="font-weight-hundred">
+              mechanisms to fight trolling and platform misuse and ...
+            </h4>
+
+          </div>
+          <div class="col-sm-3 text-white text-center">
+            <h4 class="font-weight-hundred">
+              users to own their online identities.
+            </h4>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- The Future of Social Media Section -->
+  <section>
+    <h1 class="pb-5 text-center text-white font-weight-hundred-3">
+      The Future of
+      <span class="font-weight-hundred-6 text-green">Social Media,</span> today.
+    </h1>
+
+    <div class="container">
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators ">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row justify-content-center py-5">
+
+              <div class="col-sm-2">
+                <div class="carousel-gray-box">
+
                 </div>
-                <div class="col-sm">
-                    <img src="images/platform.jpg" class="section-image mx-auto d-block pt-2" alt="InkDrop platform" style="max-width: 360px;">
+              </div>
+              <div class="col-sm-10 text-white ">
+                <h1 class="font-weight-hundred text-h1-mobile text-h1-desktop">
+                  Uncompromising Network Integrity
+
+                </h1>
+
+                <h5 class="font-weight-hundred text-h5-mobile">
+                  Data is saved on the Ethereum blockchain, thereby, making InkDrop an incorruptable platform. Its immutable timeline solves
+                  the issue of information impermanenece. Additionally, the blockchain's decentralized nature makes it immune
+                  to censorship, in an effort to uphold the platform's integrity and your right to freedom of expression.
+                </h5>
+
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- Carousel Item 2 -->
+          <div class="carousel-item">
+            <div class="row justify-content-center py-5">
+
+              <div class="col-sm-2">
+                <div class="carousel-gray-box">
+
                 </div>
+              </div>
+              <div class="col-sm-10 text-white ">
+                <h1 class="font-weight-hundred text-h1-mobile text-h1-desktop">
+                  Uncompromising Network Integrity
+
+                </h1>
+
+                <h5 class="font-weight-hundred text-h5-mobile">
+                  Data is saved on the Ethereum blockchain, thereby, making InkDrop an incorruptable platform. Its immutable timeline solves
+                  the issue of information impermanenece. Additionally, the blockchain's decentralized nature makes it immune
+                  to censorship, in an effort to uphold the platform's integrity and your right to freedom of expression.
+                </h5>
+
+              </div>
+
+            </div>
+          </div>
+          <!-- End of Item 2 -->
+
+          <!-- Carousel Item 3 -->
+          <div class="carousel-item">
+            <div class="row justify-content-center py-5">
+
+              <div class="col-sm-2">
+                <div class="carousel-gray-box">
+
+                </div>
+              </div>
+              <div class="col-sm-10 text-white ">
+                <h1 class="font-weight-hundred text-h1-mobile text-h1-desktop">
+                  Uncompromising Network Integrity
+
+                </h1>
+
+                <h5 class="font-weight-hundred text-h5-mobile">
+                  Data is saved on the Ethereum blockchain, thereby, making InkDrop an incorruptable platform. Its immutable timeline solves
+                  the issue of information impermanenece. Additionally, the blockchain's decentralized nature makes it immune
+                  to censorship, in an effort to uphold the platform's integrity and your right to freedom of expression.
+                </h5>
+
+              </div>
+
+            </div>
+          </div>
+          <!-- End of Item 3 -->
+
+
+          <!-- Carousel Item 4 -->
+          <div class="carousel-item">
+            <div class="row justify-content-center py-5">
+
+              <div class="col-sm-2">
+                <div class="carousel-gray-box">
+
+                </div>
+              </div>
+              <div class="col-sm-10 text-white ">
+                <h1 class="font-weight-hundred text-h1-mobile text-h1-desktop">
+                  Uncompromising Network Integrity
+
+                </h1>
+
+                <h5 class="font-weight-hundred text-h5-mobile">
+                  Data is saved on the Ethereum blockchain, thereby, making InkDrop an incorruptable platform. Its immutable timeline solves
+                  the issue of information impermanenece. Additionally, the blockchain's decentralized nature makes it immune
+                  to censorship, in an effort to uphold the platform's integrity and your right to freedom of expression.
+                </h5>
+
+              </div>
+
+            </div>
+          </div>
+          <!-- End of Item 4 -->
+
+          <!-- Carousel Item 5 -->
+          <div class="carousel-item">
+            <div class="row justify-content-center py-5">
+
+              <div class="col-sm-2">
+                <div class="carousel-gray-box">
+
+                </div>
+              </div>
+              <div class="col-sm-10 text-white ">
+                <h1 class="font-weight-hundred text-h1-mobile text-h1-desktop">
+                  Uncompromising Network Integrity
+
+                </h1>
+
+                <h5 class="font-weight-hundred text-h5-mobile">
+                  Data is saved on the Ethereum blockchain, thereby, making InkDrop an incorruptable platform. Its immutable timeline solves
+                  the issue of information impermanenece. Additionally, the blockchain's decentralized nature makes it immune
+                  to censorship, in an effort to uphold the platform's integrity and your right to freedom of expression.
+                </h5>
+
+              </div>
+
+            </div>
+          </div>
+          <!-- End of Item 5 -->
+
+
+          <!-- Carousel Item 6 -->
+          <div class="carousel-item">
+            <div class="row justify-content-center py-5">
+
+              <div class="col-sm-2">
+                <div class="carousel-gray-box">
+
+                </div>
+              </div>
+              <div class="col-sm-10 text-white ">
+                <h1 class="font-weight-hundred text-h1-mobile text-h1-desktop">
+                  Uncompromising Network Integrity
+
+                </h1>
+
+                <h5 class="font-weight-hundred text-h5-mobile">
+                  Data is saved on the Ethereum blockchain, thereby, making InkDrop an incorruptable platform. Its immutable timeline solves
+                  the issue of information impermanenece. Additionally, the blockchain's decentralized nature makes it immune
+                  to censorship, in an effort to uphold the platform's integrity and your right to freedom of expression.
+                </h5>
+
+              </div>
+
+            </div>
+          </div>
+          <!-- End of Item 6 -->
+
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+
+
+  </section>
+
+
+  <!-- Join The Movement Section -->
+  <section class="join-the-movement-section">
+
+    <div class="white-slope-minus-container">
+
+      <div class="white-slope-minus">
+
+      </div>
+
+    </div>
+
+
+    <div class="container">
+
+      <div class="">
+
+        <div class="row">
+
+          <div class="col-sm-6 p-10 p2-mobile pl-0">
+
+            <img src="images/join-the-movement.png" class="img-fluid max-height-780" alt="join-the-movement">
+
+          </div>
+
+
+          <div class="col-sm-6 text-black p-10 pl-0 margin-top-200px jtm-mobile">
+
+            <h1 class="font-weight-hundred-4">
+              <span class="text-green">Join</span> the Movement.
+            </h1>
+            <br>
+            <h4 class="font-weight-hundred-3 font-size-1half">
+              The
+              <span class="text-green">InkDrop</span> private beta is invite-only. Register with your e-mail now and secure your favorite user name.
+            </h4>
+
+            <div class="email-form-container pt-5">
+              <div class="input-group input-group-container">
+
+                <div class="input-group-prepend border-99">
+                  <input class="simplebox email-input-gray" type="email" class="form-control form-control-lg" placeholder="E-mail">
+                </div>
+                <button class="simplebox btn btn-outline-secondary upper form-control-lg sub-btn" type="submit">Submit</button>
+                <div class="invalid-feedback">
+                  Please enter your e-mail.
+                </div>
+
+              </div>
             </div>
 
-            <div id="section-tge" class="row py-5">
-                <div class="col-sm order-2 order-sm-1">
-                    <img src="icons/icon_calendar.svg" class="mx-auto d-block pt-2" alt="InkDrop token generation event" style="max-width: 220px;">
-                </div>
-                <div class="col-sm order-sm-1">
-                    <h3 class="section-heading mb-4">Get <span class="font-green">ink</span>volved.</h3>
-                    <p class="section-text">We want to develop InkDrop together with the community. User feedback helps to drive the project and the technologies behind it. This is why we are eager to hear from <span class="font-green">YOU</span>. Join the InkDrop community on <a href="https://www.reddit.com/r/InkDrop/" target="_blank">Reddit</a> &amp; Telegram (soon) and get involved in the discussion. </p>
+          </div>
 
-                    <p class="section-text">Subscribe to receive the newsletter, get access to InkDrop Alpha and be the first to know about the (possible) token sale and bounty program.</p>
-                    <form action="https://tech.us17.list-manage.com/subscribe/post?u=fa5b46aed2c13b72aa8fb7b0f&amp;id=df77a994bd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                        <div class="input-group mb-3 mt-4">
-                            <input type="email" value="" name="EMAIL" id="mce-EMAIL" class="form-control" placeholder="Enter your email" aria-label="Email address" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <input type="submit" value="Keep me updated!" name="subscribe" id="mc-embedded-subscribe" class="btn btn-green">
-                            </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+  </section>
+
+
+
+
+  <!-- Rethinking Microblogging Section -->
+  <section class="rethinking-section-background">
+    <h1 class="text-center text-white font-weight-hundred-3 pb-5">
+      Reth
+      <span class="text-green">ink</span>ing Microblogging.
+    </h1>
+
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-4 text-white text-center">
+          <img src="images/icon_Crypto Likes.svg" class="img-fluid p-3 height-150" width="200" height="150" alt="icon-crypto">
+          <h4 class="font-weight-hundred-4 text-green">
+            Crypto Likes
+          </h4>
+          <h4 class="font-weight-hundred">
+            Truly support your favorite creators by sending them likes of actual value.
+          </h4>
+        </div>
+
+        <div class="col-sm-4 text-white text-center">
+          <h4 class="font-weight-hundred-4 text-green">
+            Subcriptions
+          </h4>
+          <h4 class="font-weight-hundred">
+            Profit from your creative effots without having to resort to advertising.
+          </h4>
+        </div>
+
+        <div class="col-sm-4 text-white text-center">
+          <img src="images/icon_Care.svg" class="img-fluid p-3 height-150" width="200" height="150" alt="icon-care">
+          <h4 class="font-weight-hundred-4 text-green">
+            Platform Moderation
+          </h4>
+          <h4 class="font-weight-hundred">
+            You Care. We Reward.
+          </h4>
+          <h4 class="font-weight-hundred">
+            Help moderate the site and prevent misuse.
+          </h4>
+        </div>
+
+      </div>
+      <!-- End of Row -->
+
+      <div class="row justify-content-center">
+
+        <div class="col-sm-3 text-center text-white">
+          <img src="images/icon_megaphone.svg" class="img-fluid p-3 height-150" width="200" height="150" alt="icon-megaphone">
+          <h4 class="font-weight-hundred-4 text-green">
+            Broadcasting
+          </h4>
+          <h4 class="font-weight-hundred">
+            Boost your post and spread your message effectively.
+          </h4>
+
+        </div>
+
+        <div class="col-sm-3 text-center text-white">
+          <img src="images/icon_ID.svg" class="img-fluid p-3 height-150" width="200" height="150" alt="icon-ID">
+          <h4 class="font-weight-hundred-4 text-green">
+            Make it your own
+          </h4>
+          <h4 class="font-weight-hundred">
+            Have full ownership over your identity, content, and data.
+          </h4>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+  </section>
+
+
+
+  <!-- InkDrop Ecosystem Section -->
+  <section id="ecosystem">
+
+    <h1 class="text-white text-center font-weight-hundred-4 pb-5rem">
+      The
+      <span class="text-green">InkDrop</span> Ecosystem
+    </h1>
+
+    <div class="text-center">
+      <img class="mx-auto img-fluid" src="images/ecosystem.png" alt="eco-system">
+    </div>
+
+
+  </section>
+
+
+
+  <!-- Roadmap Section -->
+  <section id="roadmap" class="pt-150px">
+
+
+    <div class="white-slope-plus-container">
+
+      <div class="white-slope-plus">
+
+      </div>
+
+    </div>
+
+
+
+    <div class="container pt-170px">
+
+
+      <div class="row desktop-no-display">
+
+
+        <div class="col-sm-6 text-black pt-10rem pt-0-mobile roadmap-mobile">
+
+          <h1 class="font-weight-hundred-3 pb-5">
+            Roadmap
+            <span class="text-green">.</span>
+          </h1>
+
+          <img src="images/icon_roadmap.svg" class="img-fluid pb-2rem-mobile" alt="icon-roadmap">
+
+
+          <h4 class="font-weight-hundred font-size-1half">
+            Developing a token-based decentralized broadcasting network requires new advancements in social media and blockchain technology.
+          </h4>
+
+        </div>
+
+
+      </div>
+
+      <div class="row mobile-no-display">
+        <div class="col-sm-6 text-black pt-10rem roadmap-mobile">
+
+          <h1 class="font-weight-hundred-3 pb-5">
+            Roadmap
+            <span class="text-green">.</span>
+          </h1>
+          <h4 class="font-weight-hundred font-size-1half">
+            Developing a token-based decentralized broadcasting network requires new advancements in social media and blockchain technology.
+          </h4>
+
+        </div>
+        <div class="col-sm-6 text-center pt-10rem p-none-mobile">
+
+          <img src="images/icon_roadmap.svg" class="img-fluid " alt="icon-roadmap">
+
+        </div>
+
+      </div>
+
+
+
+
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col-sm-12">
+
+            <div class="timeline-container">
+              <ul class="timeline timeline-horizontal">
+                <li class="timeline-item text-center">
+
+                  <h4 class="font-weight-hundred tooltip-item-title pb-2" id="tooltip-1-title">2017</h4>
+
+                  <div class="col-sm-12 Timline-holder">
+                    <div class="row">
+                      <div class="col-sm-12 Timline-item">
+                        <div class="Timline-box" data-aos="fade-right">
+
+
+                          <div id="tooltip-1" class="Timline-icon" data-toggle="tooltip" data-placement="bottom" title="<h5>InkDrop 0.1 - Beta</h5> <p>Web app with basic features: user profiles, main timeline, posting (text), follow people, crypto likes, content ranking system</p>"
+                            data-html="true"></div>
+
+
                         </div>
-                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                            <input type="text" name="b_fa5b46aed2c13b72aa8fb7b0f_df77a994bd" tabindex="-1" value="">
+
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="timeline-item text-center">
+
+                  <h4 class="font-weight-hundred tooltip-item-title" id="tooltip-2-title">InkDrop 0.</h4>
+
+                  <div class="col-sm-12 Timline-holder ">
+                    <div class="row">
+                      <div class="col-sm-12 Timline-item">
+                        <div class=" Timline-box" data-aos="fade-right">
+
+                          <div id="tooltip-2" class="Timline-icon" data-toggle="tooltip" data-placement="bottom" title="<h5>InkDrop 0.1 - Beta</h5> <p>Web app with basic features: user profiles, main timeline, posting (text), follow people, crypto likes, content ranking system</p>"
+                            data-html="true"></div>
+
                         </div>
-                    </form>
 
-                </div>
-            </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="timeline-item text-center">
 
-            <div id="section-social" class="row py-5">
-                <div class="col-sm-12 text-center mb-3">
-                    <h3 class="section-heading">Reth<span class="font-green">ink</span>ing Social Media</h3>
-                    <p class="section-subheading">One feature at a time</p>
-                </div>
-                <div class="col-sm-4 pb-3">
-                    <img class="mx-auto d-block" src="icons/icon_Crypto%20Likes.svg" alt="Generic placeholder image" width="160" height="160">
-                    <p class="section-subheading text-center mt-1 mb-1">Crypto Likes</p>
-                    <p class=" text-center">Truly support your favorite creators by sending likes of real value.</p>
-                </div>
-                <div class="col-sm-4 pb-3">
-                    <img class="mx-auto d-block" src="icons/icon_megaphone.svg" alt="Generic placeholder image" width="160" height="160">
-                    <p class="section-subheading text-center mt-1 mb-1">DROPcasting</p>
-                    <p class=" text-center">Be in control of your post’s performance.</p>
-                </div>
-                <div class="col-sm-4 pb-3">
-                    <img class="mx-auto d-block" src="icons/icon_monetize.svg" alt="Generic placeholder image" width="160" height="160">
-                    <p class="section-subheading text-center mt-1 mb-1">Monetize on Creation &amp; Curation</p>
-                    <p class=" text-center">Profit from the value you create.</p>
-                </div>
-                <div class="col-sm-4 pb-3">
-                    <img class="mx-auto d-block" src="icons/icon_Care.svg" alt="Generic placeholder image" width="160" height="160">
-                    <p class="section-subheading text-center mt-1 mb-1">You Care. We Reward. </p>
-                    <p class=" text-center">Help moderate the site and earn the rewards.</p>
-                </div>
-                <div class="col-sm-4 pb-3">
-                    <img class="mx-auto d-block" src="icons/icon_ID.svg" alt="Generic placeholder image" width="160" height="160">
-                    <p class="section-subheading text-center mt-1 mb-1">Make it Your Own</p>
-                    <p class=" text-center">Have full ownership over your identity, content, and data.</p>
-                </div>
-                <div class="col-sm-4 pb-3">
-                    <img class="mx-auto d-block" src="icons/icon_value.svg" alt="Generic placeholder image" width="160" height="160">
-                    <p class="section-subheading text-center mt-1 mb-1">Your Attention is Valuable</p>
-                    <p class=" text-center">Spend it on content with real value. Don’t waste it on frivolous posts.</p>
-                </div>
-                <div class="col-sm-4 offset-sm-4">
-                    <img class="mx-auto d-block" src="icons/icon-decentralize.svg" alt="Generic placeholder image" width="160" height="160">
-                    <p class="section-subheading text-center mt-1 mb-1">Why decentralize microblogging?</p>
-                    <p class=" text-center">No Single-Point-of-Failure = Highly secure. <br> Collective memory = Immutable timeline. <br> Zero downtime = High availability. <br> Encryption by nature = Enhanced privacy. <br> Censorship free = Integrate network.</p>
-                </div>
-            </div>
+                  <h4 class="font-weight-hundred tooltip-item-title" id="tooltip-3-title">InkDrop 1.</h4>
 
-            <div id="section-coins" class="row py-5">
-                <div class="col-sm-6">
-                    <h3 class="section-heading mb-4">Got <span class="font-green">DROP</span>?</h3>
 
-                    <p class="section-text"><span class="font-green">DROPs</span> are utility tokens for a token reward system designed specifically for a social media broadcasting network. <span class="font-green">DROPs</span> will be used inside the InkDrop ecosystem to unlock all its features, enable the monetization of user generated content, and incentivize positive user behavior. <br style="line-height: 30px" />As soon as InkDrop goes live, <span class="font-green">DROP</span> tokens can be earned on the platform or traded on exchanges. At the time of writing it is still undecided whether or not <span class="font-green">DROPs</span> will be generated through an ICO or not.
-                    </p>
-                </div>
-                <div class="col-sm-6">
-                    <img src="icons/icon_DROPcoins.svg" class="section-image mx-auto d-block pt-2" alt="InkDrop coins" style="max-width: 220px;">
-                </div>
-            </div>
+                  <div class="col-sm-12 Timline-holder ">
+                    <div class="row">
+                      <div class="col-sm-12 Timline-item">
+                        <div class=" Timline-box" data-aos="fade-right">
 
-            <div id="section-poc" class="row py-5">
-                <div class="col-sm order-2 order-sm-1">
-                    <img src="icons/icon_Care.svg" class="section-image mx-auto d-block pt-2" alt="InkDrop proof-of-care mechanism" style="max-width: 350px;">
-                </div>
-                <div class="col-sm order-sm-1">
-                    <h3 class="section-heading mb-4">Proof-of-Care Protocol.</h3>
-                    <p class="section-text">Proof-of-Care is a novel approach to achieve a self-regulating social network. On InkDrop the community itself is empowered to enforce the network’s terms of service. Users can earn <span class="font-green">DROP</span> tokens in exchange for moderating the platform, allowing for an easy access into the crypto ecosystem. <br style="line-height: 30px" />The mechanism is based on Vitalik Buterin’s SchellingCoin approach and aims to produce the community’s most objective opinion towards the compliance of a post. </p>
-                </div>
-            </div>
-        </div>
+                          <div id="tooltip-3" class="Timline-icon" data-toggle="tooltip" data-placement="bottom" title="<h5>InkDrop 0.1 - Beta</h5> <p>Web app with basic features: user profiles, main timeline, posting (text), follow people, crypto likes, content ranking system</p>"
+                            data-html="true"></div>
 
-        <div class="container-fluid bg-dark-light">
-            <div class="container">
-                <div id="section-team" class="row py-5">
-                    <div class="col-sm-12 mb-2">
-                        <h3 class="section-heading text-center">The Team behind <span class="font-green">InkDrop</span></h3>
-                        <p class="section-subheading text-center">Hello World!</p>
-                    </div>
-                    <div class="col-sm-6 mb-4">
-                        <img src="images/pic_schoder.png" class="section-image mx-auto d-block" alt="InkDrop proof-of-care mechanism" style="max-width: 200px;">
-                        <p class="section-subheading text-center mt-4">Tobias Schoder<br>COO</p>
-                        <p class=" text-center">Tobias was a top tier technology consultant and software developer. He has practical and academic experience in digital innovation, with research results published by Springer publishing company. He received his master's degrees from TU Berlin as well as UT Twente. He is a Hasso Plattner Institute Alumni and an active member of the Crypto Valley Association. He loves to blog about disrupting technologies and practices Muay Thai.</p>
 
-                    </div>
-                    <div class="col-sm-6 mb-4">
-                        <img src="images/pic_kaserer.png" class="section-image mx-auto d-block" alt="InkDrop proof-of-care mechanism" style="max-width: 200px;">
-                        <p class="section-subheading text-center mt-4">Michael Kaserer<br>CTO</p>
-                        <p class=" text-center">Michael is a computer science graduate and holds Master of Science degrees from two of Europe’s top technical universities (TU Berlin &amp; UT Twente). He worked as a freelancing web developer before taking on the role as CTO of a high growth startup in Berlin, focusing on scaling system architectures and BI. When not writing lines of code or trading cryptocurrencies he spends his time climbing in the boulder hall or in the Alps.</p>
-                    </div>
-                    <div class="col-sm-6 mb-4">
-                        <img src="images/pic_wollschlaeger.png" class="section-image mx-auto d-block" alt="InkDrop proof-of-care mechanism" style="max-width: 200px;">
-                        <p class="section-subheading text-center mt-4">Torben Wollschläger<br>CDO</p>
-                        <p class=" text-center">Torben has 10+ years of experience as a Creative Director at a renowned design and ad agency, responsible for UX and web design. He virtually lives and breathes creativity and has a great vision for social media design. When not using his right side of the brain Torben destroys dreams playing professional Counter Strike GO.</p>
-                    </div>
-                    <div class="col-sm-6 mb-4">
-                        <img src="images/pic_kaufeld.png" class="section-image mx-auto d-block" alt="InkDrop proof-of-care mechanism" style="max-width: 200px;">
-                        <p class="section-subheading text-center mt-4">Christian Kaufeld<br>CMO</p>
-                        <p class=" text-center">Christian is experienced in growth marketing and founded a successful performance marketing agency. As a passionate growth hacker he consults brands like Red Bull, TrackR, and Airbnb and travels the world as a digital nomad.</p>
-                    </div>
-                    <div class="col-sm-6 mb-4">
-                        <img src="images/pic_neye.png" class="section-image mx-auto d-block" alt="InkDrop proof-of-care mechanism" style="max-width: 200px;">
-                        <p class="section-subheading text-center mt-4">Christoph Neye<br>Advisor</p>
-                        <p class=" text-center">Christoph is a Berlin based serial entrepreneur with a great understanding of bootstrapping a start-up. As a former manager at StudiVZ (Europe’s former largest social network with 16mio users), he also contributes invaluable insights on how to successfully run a social network.</p>
-                    </div>
-                    <div class="col-sm-6 mb-4">
-                        <img src="icons/bg_portrait.svg" class="section-image mx-auto d-block" alt="InkDrop proof-of-care mechanism" style="max-width: 200px;">
-                        <p class="section-subheading text-center mt-4">YOU<br>Full Stack Developer</p>
-                        <p class=" text-center">Interested in a new challenge? Contact us.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="container-fluid bg-dark py-4">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                </ol>
-                <div class="carousel-inner container mx-auto d-block pb-5" style="">
-                    <div class="carousel-item active">
-                        <div class="section-heading text-center mt-4 font-green">Mark Zuckerberg</div>
-                        <p class="font-white text-center">(co-founder and CEO of Facebook)</p>
-                        <p class="font-white text-center font-italic">„One of the most interesting questions in technology right now is about centralization vs decentralization. Like cryptocurrencies that take power from centralized systems and put it back into people's hands.“</p>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="section-heading text-center mt-4 font-green">Vitalik Buterin</div>
-                        <p class="font-white text-center">(co-founder of Ethereum)</p>
-                        <p class="font-white text-center font-italic">„Google, Facebook, and Twitter basically control your identity, they are these big unaccountable centralized behemoth.“</p>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="section-heading text-center mt-4 font-green">Jack Dorsey</div>
-                        <p class="font-white text-center">(co-founder and CEO of Twitter)</p>
-                        <p class="font-white text-center font-italic">„There are clear global benefits to cryptocurrencies. And great services and businesses will be built upon them. Just a matter of time.“</p>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="section-heading text-center mt-4 font-green">Naval Ravikant</div>
-                        <p class="font-white text-center">(co-founder and CEO of AngelList)</p>
-                        <p class="font-white text-center font-italic">„Blockchains' open and merit based markets can replace networks previously run by kings, corporations, aristocracies, and mobs.“</p>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
-
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row py-5">
-                <div class="col-sm-12 text-center">
-                    <h3 class="section-heading text-center mb-4">Join the Revolution,</h3>
-                    <p class="section-text">blockchain enthusiasts, thought leaders, technology pioneers, crypto evangelists, hackers, rebels, bloggers, commenters, troll haters, social media disrupters, creators &amp; curators, fairness seekers, internet entrepreneurs, and community leaders!</p>
-                </div>
-                <div class="col-sm-6 offset-sm-3 text-center">
-                    <form action="https://tech.us17.list-manage.com/subscribe/post?u=fa5b46aed2c13b72aa8fb7b0f&amp;id=df77a994bd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                        <div class="input-group mb-3 mt-4">
-                            <input type="mail" value="" name="EMAIL" id="mce-EMAIL" class="form-control" placeholder="Enter your email" aria-label="Email address" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <input type="submit" value="Keep me updated!" name="subscribe" id="mc-embedded-subscribe" class="btn btn-green">
-                            </div>
                         </div>
-                        <!--
-<div id="mce-responses" class="clear">
-    <div class="response" id="mce-error-response" style="display:none"></div>
-    <div class="response" id="mce-success-response" style="display:none"></div>
-</div>
--->
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="timeline-item text-center">
 
-                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                            <input type="text" name="b_fa5b46aed2c13b72aa8fb7b0f_df77a994bd" tabindex="-1" value="">
+                  <h4 class="font-weight-hundred tooltip-item-title" id="tooltip-4-title">InkDrop 2.</h4>
+
+
+                  <div class="col-sm-12 Timline-holder ">
+                    <div class="row">
+                      <div class="col-sm-12 Timline-item">
+                        <div class=" Timline-box" data-aos="fade-right">
+
+                          <div id="tooltip-4" class="Timline-icon" data-toggle="tooltip" data-placement="bottom" title="<h5>InkDrop 0.1 - Beta</h5> <p>Web app with basic features: user profiles, main timeline, posting (text), follow people, crypto likes, content ranking system</p>"
+                            data-html="true"></div>
+
                         </div>
-                    </form>
-                </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="timeline-item text-center">
+
+                  <h4 class="font-weight-hundred tooltip-item-title" id="tooltip-5-title">InkDrop 3.</h4>
+
+
+                  <div class="col-sm-12 Timline-holder ">
+                    <div class="row">
+                      <div class="col-sm-12 Timline-item">
+                        <div class=" Timline-box" data-aos="fade-right">
+
+                          <div id="tooltip-5" class="Timline-icon" data-toggle="tooltip" data-placement="bottom" title="<h5>InkDrop 0.1 - Beta</h5> <p>Web app with basic features: user profiles, main timeline, posting (text), follow people, crypto likes, content ranking system</p>"
+                            data-html="true"></div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="timeline-item text-center">
+
+                  <h4 class="font-weight-hundred tooltip-item-title" id="tooltip-6-title">InkDrop?.</h4>
+
+
+                  <div class="col-sm-12 Timline-holder ">
+                    <div class="row">
+                      <div class="col-sm-12 Timline-item">
+                        <div class=" Timline-box" data-aos="fade-right">
+
+                          <div id="tooltip-6" class="Timline-icon" data-toggle="tooltip" data-placement="bottom" title="<h5>InkDrop 0.1 - Beta</h5> <p>Web app with basic features: user profiles, main timeline, posting (text), follow people, crypto likes, content ranking system</p>"
+                            data-html="true"></div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+
+              </ul>
             </div>
+          </div>
+
         </div>
-    </main>
 
-    <footer class="py-4">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col">
-                    <!--                    <img src="icons/inkdrop_logo.svg" width="20" height="20" class="d-inline-block align-top" alt="InkDrop Logo">-->
-                    &copy; InkDrop 2018
-                </div>
-                <div class="col text-right">
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="https://medium.com/inkdrop">Blog</a></li>
-                        <li class="list-inline-item"><a href="/imprint.html">Imprint</a></li>
-                        <li class="list-inline-item">
-                            <a href="&#x6d;&#97;&#105;&#108;&#x74;&#x6f;&#58;&#104;&#x65;&#x6c;&#x6c;&#x6f;&#64;&#105;&#x6e;&#107;&#x64;&#114;&#x6f;&#x70;&#x2e;&#x74;&#x65;&#99;&#104;">Contact us</a>
-                        </li>
-                    </ul>
 
-                </div>
+      </div>
 
-                <!--                <div class="col-sm-4">Social Media Logos</div>-->
+
+
+    </div>
+
+
+
+
+
+  </section>
+
+
+
+  <!-- Get Involved Section -->
+  <section id="community" class="get-involved-section">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 text-white pt-5 ">
+
+          <h1 class="font-weight-hundred-3 pb-5">
+            Get Involved
+            <span class="text-green">.</span>
+          </h1>
+          <h4 class="font-weight-hundred font-size-1half">
+            <span class="text-green font-weight-hundred-4">InkDrop</span> is made for and developed by the community. Feedback helps to drive the project forward. This
+            is why we are eager to hear from YOU. Join the
+            <span class="text-green font-weight-hundred-4">InkDrop</span> community and get involved in the discussion.
+          </h4>
+
+        </div>
+        <div class="col-sm-6 text-white pt-5">
+
+          <div class="row pt-5 px-5">
+
+            <div class="col-6 col-sm-6 text-center-mobile text-center">
+              <i class="fab fa-github font-size-3rem"></i>
             </div>
+            <div class="col-6 col-sm-6 text-center-mobile text-left">
+              <i class="fab fa-medium font-size-3rem"></i>
+            </div>
+
+          </div>
+          <div class="row pt-5 px-5">
+
+            <div class="col-6 col-sm-6 text-center-mobile text-center">
+              <i class="fab fa-telegram-plane font-size-3rem"></i>
+            </div>
+            <div class="col-6 col-sm-6 text-center-mobile text-left">
+              <i class="fab fa-reddit-square font-size-3rem"></i>
+            </div>
+
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="scripts/app.js" type="text/javascript"></script>
+  </section>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113478171-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'UA-113478171-1');
 
-    </script>
+
+  <!-- Subscribe Now Section -->
+  <section>
+    <div class="text-center text-white p-10 p2-mobile">
+      <h1 class="font-weight-hundred pb-5">
+        <span class="font-weight-hundred-6 text-green">Subscribe</span> now!</h1>
+      <h4 class="font-weight-hundred pb-5">Get exclusive updates and early product invites.</h4>
+
+      <div class="email-form-container">
+        <div class="input-group">
+
+          <div class="input-group-prepend border-99">
+            <input type="email" class="simplebox form-control form-control-lg email-input" placeholder="E-mail">
+          </div>
+          <button style="" class="simplebox btn btn-outline-secondary upper form-control-lg sub-btn" type="submit">Submit</button>
+          <div class="invalid-feedback">
+            Please enter your e-mail.
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer class="container py-5">
+    <div class="row">
+      <div class="col-sm-6 ">
+
+        <img src="images/icon_drop.svg" width="40" height="45" class="mobile-no-display d-md-inline-block mb-3" alt="icon-drop">
+
+        <h2 class="mobile-no-display text-white d-md-inline-block font-size-2rem">InkDrop
+          <span class="text-green">.</span>
+        </h2>
+
+        <h5 class="upper text-white d-md-inline-block pl-5 font-weight-hundred">
+
+
+          <span>Contact</span>
+
+          <span class="pl-5">Imprint</span>
+
+        </h5>
+
+      </div>
+
+      <div class="col-sm-6 text-center-mobile pt-2rem-mobile">
+
+        <div class="row justify-content-end">
+          <div class="col-3 col-sm-2 text-center-mobile">
+            <span class="pl-5 font-size-2rem text-white float-right footer-icon-mobile">
+              <i class="fab fa-github"></i>
+            </span>
+          </div>
+
+          <div class="col-3 col-sm-2 text-center-mobile">
+            <span class="pl-5 font-size-2rem text-white float-right footer-icon-mobile">
+              <i class="fab fa-medium"></i>
+            </span>
+          </div>
+
+          <div class="col-3 col-sm-2 text-center-mobile">
+            <span class="pl-5 font-size-2rem text-white float-right footer-icon-mobile">
+              <i class="fab fa-telegram-plane"></i>
+            </span>
+          </div>
+
+          <div class="col-3 col-sm-2 text-center-mobile">
+            <span class="pl-5 font-size-2rem text-white float-right footer-icon-mobile">
+              <i class="fab fa-reddit-square"></i>
+            </span>
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+
+
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <script src="./assets/smooth-scroll.min.js"></script>
+
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
+
+
+  <script type="text/javascript">
+
+    /**
+     * Listen to scroll to change header opacity class
+     */
+    function checkScroll() {
+      var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
+
+      if ($(window).scrollTop() > startY) {
+        $('.navbar').addClass("scrolled");
+      } else {
+        $('.navbar').removeClass("scrolled");
+      }
+    }
+
+    if ($('.navbar').length > 0) {
+      $(window).on("scroll load resize", function () {
+        checkScroll();
+      });
+    }
+
+    $('#tooltip-2').tooltip('show');
+    $('#tooltip-2.Timline-icon').css('background-color', '#85bd3e');
+
+    $("#tooltip-1-title").mouseover(function () {
+      $('#tooltip-1.Timline-icon').css('background-color', '#85bd3e');
+      $('#tooltip-1').tooltip('show');
+
+      $('#tooltip-2').tooltip('hide');
+      $('#tooltip-2.Timline-icon').css('background-color', '#eeeeee');
+
+    }).mouseleave(function () {
+      $('#tooltip-1.Timline-icon').css('background-color', '#eeeeee');
+      $('#tooltip-1').tooltip('hide');
+    });
+
+    $("#tooltip-2-title").mouseover(function () {
+      $('#tooltip-2.Timline-icon').css('background-color', '#85bd3e');
+      $('#tooltip-2').tooltip('show');
+
+    }).mouseleave(function () {
+      $('#tooltip-2.Timline-icon').css('background-color', '#eeeeee');
+      $('#tooltip-2').tooltip('hide');
+    });
+
+    $("#tooltip-3-title").mouseover(function () {
+      $('#tooltip-3.Timline-icon').css('background-color', '#85bd3e');
+      $('#tooltip-3').tooltip('show');
+
+      $('#tooltip-2').tooltip('hide');
+      $('#tooltip-2.Timline-icon').css('background-color', '#eeeeee');
+
+    }).mouseleave(function () {
+      $('#tooltip-3.Timline-icon').css('background-color', '#eeeeee');
+      $('#tooltip-3').tooltip('hide');
+    });
+
+    $("#tooltip-4-title").mouseover(function () {
+      $('#tooltip-4.Timline-icon').css('background-color', '#85bd3e');
+      $('#tooltip-4').tooltip('show');
+
+      $('#tooltip-2').tooltip('hide');
+      $('#tooltip-2.Timline-icon').css('background-color', '#eeeeee');
+
+    }).mouseleave(function () {
+      $('#tooltip-4.Timline-icon').css('background-color', '#eeeeee');
+      $('#tooltip-4').tooltip('hide');
+    });
+
+    $("#tooltip-5-title").mouseover(function () {
+      $('#tooltip-5.Timline-icon').css('background-color', '#85bd3e');
+      $('#tooltip-5').tooltip('show');
+
+      $('#tooltip-2').tooltip('hide');
+      $('#tooltip-2.Timline-icon').css('background-color', '#eeeeee');
+
+    }).mouseleave(function () {
+      $('#tooltip-5.Timline-icon').css('background-color', '#eeeeee');
+      $('#tooltip-5').tooltip('hide');
+    });
+
+    $("#tooltip-6-title").mouseover(function () {
+      $('#tooltip-6.Timline-icon').css('background-color', '#85bd3e');
+      $('#tooltip-6').tooltip('show');
+
+      $('#tooltip-2').tooltip('hide');
+      $('#tooltip-2.Timline-icon').css('background-color', '#eeeeee');
+
+    }).mouseleave(function () {
+      $('#tooltip-6.Timline-icon').css('background-color', '#eeeeee');
+      $('#tooltip-6').tooltip('hide');
+    });
+
+
+  </script>
+
+
+
+
 </body>
 
 </html>
