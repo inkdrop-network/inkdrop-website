@@ -1,3 +1,5 @@
+
+
 .timeline,
 .timeline-horizontal {
   list-style: none;
@@ -294,7 +296,7 @@ a:hover {
 }
 .full-height {
   height: 100vh;
-  /* min-height: 1000px; */
+   min-height: 500px; 
 }
 .navbar-padding {
   padding-top: 119px;
@@ -455,12 +457,7 @@ a:hover {
   background-color: #73a336;
   border-color: #73a336;
 }
-.scroll-text {
-  bottom: 0;
-  position: absolute;
-  left: -20px;
-  color: white;
-}
+
 .betabtn:hover {
   background-color: #73a336;
 }
@@ -525,39 +522,47 @@ a:hover {
   box-shadow: none !important;
 }
 
-#section10 {
-  position: relative;
-  height: 5rem;
-  /* margin-top: -6rem; */
+#scroller {
+    /*    margin-top: -4.6rem;*/
 }
-#section10 a {
-  padding-top: 60px;
-}
-#section10 a span {
-  position: absolute;
 
-  left: 50%;
-  width: 30px;
-  height: 50px;
-  margin-left: -15px;
-  border: 2px solid #fff;
-  border-radius: 50px;
-  box-sizing: border-box;
+#scroller a {
+    color: var(--white);
 }
-#section10 a span::before {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  content: "";
-  width: 6px;
-  height: 6px;
-  margin-left: -3px;
-  background-color: #fff;
-  border-radius: 100%;
-  -webkit-animation: sdb10 2s infinite;
-  animation: sdb10 2s infinite;
-  box-sizing: border-box;
+
+
+#scroller a:hover {
+    color: var(--white);
+    text-decoration: none;
+    opacity: 0.8;
 }
+
+#scroller a div {
+    width: 2rem;
+    height: 3.1rem;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    position: relative;
+    left: 50%;
+    margin-left: -15px;
+    top: 0px;
+}
+
+#scroller a div::before {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: #fff;
+    border-radius: 100%;
+    -webkit-animation: sdb10 2s infinite;
+    animation: sdb10 2s infinite;
+    box-sizing: border-box;
+}
+
 @-webkit-keyframes sdb10 {
   0% {
     -webkit-transform: translate(0, 0);
@@ -660,11 +665,6 @@ a:hover {
     border-radius: 40px;
 
     margin-left: 1rem;
-  }
-  .full-height {
-    height: unset;
-    min-height: unset;
-    padding-bottom: 10rem;
   }
   .p2-mobile {
     padding: 2rem;
