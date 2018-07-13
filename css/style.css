@@ -1,4 +1,27 @@
+:root {
+  --dark: #29313e;
+  --green: #85bd3e;
+  --green-dark: #73a336;
+  --white: #ffffff;
+  --dark-light: #f0f0f0;
+  --success: var(--green);
+}
 
+body {
+  font-family: "Overpass", "Helvetica Neue", Arial, sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--dark);
+  font-weight: 300;
+}
+
+.text-green {
+  color: var(--green);
+}
+
+.text-dark {
+  color: var(--dark);
+}
 
 .timeline,
 .timeline-horizontal {
@@ -241,10 +264,6 @@
 .upper {
   text-transform: uppercase;
 }
-body {
-  background-color: #29313e;
-  font-family: Overpass;
-}
 
 .betabtn {
   border-radius: 99px;
@@ -268,19 +287,14 @@ a:hover {
 
 .inkdrop-section {
   background: linear-gradient(0deg, rgba(41, 49, 62), rgba(41, 49, 62, 0)),
-    url(images/inkdrop-background.jpg);
+    url(../images/inkdrop-background.jpg);
   background-size: cover;
   background-position: top;
-}
-.navbar {
-  padding-top: 2rem;
 }
 .icon-drop {
   margin-bottom: 16px;
 }
-.text-green {
-  color: #85bd3e;
-}
+
 .icon-title {
   font-size: 2rem;
   font-weight: 600;
@@ -296,7 +310,7 @@ a:hover {
 }
 .full-height {
   height: 100vh;
-   min-height: 500px; 
+  min-height: 500px;
 }
 .navbar-padding {
   padding-top: 119px;
@@ -317,7 +331,7 @@ a:hover {
   font-size: 3rem;
 }
 .inkdrop-platform-background {
-  background: url("images/inkdrop-platform.jpg");
+  background: url(../images/inkdrop-platform.jpg);
   background-size: contain;
 }
 .micro-beyond-twitter {
@@ -325,10 +339,10 @@ a:hover {
   bottom: 20%;
   left: 55%;
 }
-.scroll-icon {
+/* .scroll-icon {
   background: url(https://www.nxworld.net/example/css-scroll-down-button/bg10.jpg)
     center center / cover no-repeat;
-}
+} */
 .carousel-gray-box {
   background-color: #8999b6;
   width: 184px;
@@ -337,15 +351,15 @@ a:hover {
 }
 .rethinking-section-background {
   background: linear-gradient(0deg, rgb(41, 49, 62), rgba(41, 49, 62, 0.45)),
-    url(images/rethinking-background.jpg);
+    url(../images/rethinking-background.jpg);
   background-size: cover;
-  padding-top: 750px;
-  padding-bottom: 400px;
-  margin-top: -250px;
+  /* padding-top: 750px; */
+  /* padding-bottom: 400px; */
+  /* margin-top: -250px; */
 }
 .get-involved-section {
   background: linear-gradient(0deg, rgb(41, 49, 62), rgba(41, 49, 62, 0.4)),
-    url(images/get-involved-background.jpg);
+    url(../images/get-involved-background.jpg);
   background-size: cover;
   padding-top: 570px;
   padding-bottom: 300px;
@@ -360,7 +374,8 @@ a:hover {
   color: white;
 }
 .join-the-movement-section {
-  padding-top: 150px;
+  /* padding-top: 150px; */
+  background-color: white;
 }
 .z-index-999 {
   z-index: 999;
@@ -383,10 +398,35 @@ a:hover {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
+.separator-dark {
+  width: 100%;
+  height: 550px;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--dark),
+    var(--dark) 50%,
+    var(--white) 50%,
+    var(--white)
+  );
+}
+
+.separator-white {
+  width: 100%;
+  height: 550px;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--white),
+    var(--white) 50%,
+    transparent 50%,
+    transparent
+  );
+}
+
 .white-slope-minus {
   background-color: white;
   height: 550px;
-  transform: rotate(-15deg);
+  /* transform: rotate(-15deg); */
   width: 120%;
   margin-left: -10%;
   position: relative;
@@ -426,11 +466,15 @@ a:hover {
 }
 .email-form-container {
   display: inline-block;
-  background-color: white;
+  /* background-color: white; */
   border-radius: 99px;
 }
 .input-group-container {
   background-color: #dee2e6;
+  border-radius: 99px;
+}
+.input-group-container-white {
+  background-color: #fff;
   border-radius: 99px;
 }
 .p-5rem {
@@ -449,6 +493,12 @@ a:hover {
 }
 .margin-top-200px {
   margin-top: 200px;
+}
+.mt-10vh {
+  margin-top: 10vh;
+}
+.mb-50px {
+  margin-bottom: 50px;
 }
 .pb-5rem {
   padding-bottom: 5rem;
@@ -482,6 +532,9 @@ a:hover {
 .pt-10rem {
   padding-top: 10rem;
 }
+.pb-10rem {
+  padding-bottom: 10rem;
+}
 .what-is-inkdrop-img {
   width: 50%;
 }
@@ -489,7 +542,7 @@ a:hover {
   max-width: 550px;
 }
 .platform-background {
-  background: url(images/inkdrop-platform.jpg) no-repeat center center;
+  background: url(../images/inkdrop-platform.jpg) no-repeat center center;
   padding-top: 2rem;
   height: 550px;
 }
@@ -523,44 +576,43 @@ a:hover {
 }
 
 #scroller {
-    /*    margin-top: -4.6rem;*/
+  /*    margin-top: -4.6rem;*/
 }
 
 #scroller a {
-    color: var(--white);
+  color: var(--white);
 }
 
-
 #scroller a:hover {
-    color: var(--white);
-    text-decoration: none;
-    opacity: 0.8;
+  color: var(--white);
+  text-decoration: none;
+  opacity: 0.8;
 }
 
 #scroller a div {
-    width: 2rem;
-    height: 3.1rem;
-    border: 2px solid #fff;
-    border-radius: 50px;
-    position: relative;
-    left: 50%;
-    margin-left: -15px;
-    top: 0px;
+  width: 2rem;
+  height: 3.1rem;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  position: relative;
+  left: 50%;
+  margin-left: -15px;
+  top: 0px;
 }
 
 #scroller a div::before {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    content: '';
-    width: 6px;
-    height: 6px;
-    margin-left: -3px;
-    background-color: #fff;
-    border-radius: 100%;
-    -webkit-animation: sdb10 2s infinite;
-    animation: sdb10 2s infinite;
-    box-sizing: border-box;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: "";
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: sdb10 2s infinite;
+  animation: sdb10 2s infinite;
+  box-sizing: border-box;
 }
 
 @-webkit-keyframes sdb10 {
@@ -596,16 +648,12 @@ a:hover {
   }
 }
 
-.navbar-toggler {
-  margin-bottom: 25px;
-}
-
 @media (max-width: 600px) {
   .pt-2rem-mobile {
     padding-top: 2rem;
   }
   .platform-background {
-    background: url(images/inkdrop-platform.jpg) no-repeat center center;
+    background: url(../images/inkdrop-platform.jpg) no-repeat center center;
     padding-top: 2rem;
     background-size: contain;
     height: unset;
@@ -760,14 +808,14 @@ a:hover {
     bottom: unset;
     right: unset;
   }
-  .rethinking-section-background {
+  /* .rethinking-section-background {
     background: linear-gradient(0deg, rgb(41, 49, 62), rgba(41, 49, 62, 0.78)),
-      url(images/rethinking-background.jpg);
+      url(../images/rethinking-background.jpg);
     background-size: cover;
     padding-top: 300px;
     padding-bottom: 150px;
     margin-top: 0px;
-  }
+  } */
   .desktop-no-display {
     display: flex;
   }
