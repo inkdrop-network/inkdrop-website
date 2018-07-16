@@ -11,6 +11,7 @@ $(
   );
   e.preventDefault();
 });
+
 /**
  * Listen to scroll to change header opacity class
  */
